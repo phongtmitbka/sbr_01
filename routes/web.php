@@ -35,3 +35,6 @@ Route::group(['prefix' => 'user', 'middleware' => 'auth'], function () {
 
     Route::post('storePass', ['as' => 'user.storePass', 'uses' => 'AccountController@storePass']);
 });
+
+Route::get('search/member', ['as' => 'search.member', 'uses' => 'MemberController@searchMember']);
+

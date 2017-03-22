@@ -90,6 +90,11 @@ class User extends Authenticatable
         return $query->where('facebook_id', $facebookId);
     }
 
+    public function scopeSearchMember($query, $name)
+    {
+        return $query->where('name', 'like', '%' . $name . '%');
+    }
+
     public function storeSetting(Request $request)
     {
         try {
@@ -116,9 +121,9 @@ class User extends Authenticatable
         try {
             $file = $request->file($imageType);
             $name = $file->getClientOriginalName();
-            $name = str_random(5).'_'.$name;
-            $file->move($imageType.'s', $name);
-            $this->$imageType = $imageType.'s/'.$name;
+            $name = str_random(5) . '_' . $name;
+            $file->move($imageType . 's', $name);
+            $this->$imageType = $imageType . 's/' . $name;
         } catch (Exception $e) {
             return redirect()->back();
         }

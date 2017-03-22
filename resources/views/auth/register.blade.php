@@ -63,8 +63,8 @@
                         <div class="form-group">
                             <label for="language" class="col-md-4 control-label">{{ trans('app.language') }}</label>
                             <div class="col-md-6">
-                                <input type="radio" name="language" value="0" checked=""> {{ trans('app.english') }}
-                            <input type="radio" value="1" name="language"> {{ trans('app.vietnamese') }}
+                                <input type="radio" name="language" value="en" checked=""> {{ trans('app.english') }}
+                                <input type="radio" value="vi" name="language"> {{ trans('app.vietnamese') }}
                             </div>
                         </div>
                         
