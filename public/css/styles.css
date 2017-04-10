@@ -1,0 +1,93 @@
+#logout {
+    cursor: pointer;
+}
+
+#avatar_header, .small_avatar {
+    width: 30px;
+    height: 30px;
+}
+
+.avatar {
+    width: 100%;
+}
+
+.photo-cover {
+    width: 100%;
+    height: 400px;
+}
+
+.book-image {
+    width: 100%;
+    height: 80%;
+}
+
+.review-item .book-image {
+    width: 230px;
+    height: 300px;
+}
+
+.book-item {
+    width: 30%;
+    margin: 0px 12px;
+    float: left;
+}
+
+.book-item .book-image {
+    width: 100%;
+    height: 280px;
+}
+
+.review-frame {
+    width: 100%;
+    height: 120px;
+}
+
+.total {
+    color: blue;
+}
+
+.big-video-frame {
+    width: 100%;
+    height: 400px;
+}
+
+.frame-border {
+    border: 0px;
+}
+
+.small-video {
+    width: 100%;
+}
+
+.top-video {
+    margin: 20px 0px;
+}
+
+.review-category, .del-review {
+    cursor: pointer;
+}
+
+.follow-btn, .following-btn {
+    margin: 0px 0px 0px 60px;
+    width: 100px;
+}
+
+.rank {
+    padding: 0px;
+    margin: 0px 0px;
+}
+
+.rank-title {
+    text-align: center;
+    height: 150px;
+    margin: auto;
+}
+
+.rank .list-group-item {
+    height: 145px;
+}
+
+.rank .follow-btn, .rank .following-btn {
+    margin: 0px 0px 0px 0px;
+    width: 80px;
+}
