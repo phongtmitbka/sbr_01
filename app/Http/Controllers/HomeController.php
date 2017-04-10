@@ -58,4 +58,11 @@ class HomeController extends Controller
 
         return view('pages.search-review', compact('reviews'));
     }
+
+    public function searchVideo(Request $request)
+    {
+        $videos = $this->reviewRepository->searchVideo($request->caption)->get();
+
+        return view('pages.search-video', compact('videos'));
+    }
 }
